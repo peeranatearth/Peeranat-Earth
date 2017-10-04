@@ -1,12 +1,77 @@
 <html>
 
 <head>
+	<title>Peeranat CPS</title>
+	<link rel="stylesheet" type="text/css" href="aa.css"/>
+	<script src="jquery-3.2.1.min.js" type="text/javascript" /script></script>
+	<style>
+		.textred{
+			color:red;
+		}
+		.pinkborder{
+			border:green 5px dashed;
+		h2{
+			color:blue;
+		  }
+		#cieh3{
+			color : yellow ;
+	
+	</style>
+	<script>
+		 var i = 0;
+		 
+		function myAlert(){
+		    alert("Hi " + i);
+			i++;
+		}
+	</script>
+	
+	<script>
+		var i = 0;
+		
+		function changeName(){
+		document.getElementById("cieh3").innerText="Peeranat" +i;
+		i++;
+	   }
+	</script>
+
+    <script>
+		var i= 0;
+		
+	    function changeName(){
+			$("#cieh3").text("Peeranat"+i);
+			i++;
+		}
+	</script>
 </head>
 
 <body>
-  <h1> Peeranat Limpitaporn <\h1>
-  <h2> KMITL </h2>
-  <h3>H3</h3>
-  A<span style="color:green"> B </span> C <span> 
+  <h1 id=cieh3> Peeranat Limpitaporn </h1>
+  <script>
+	document.getElementById("cieh3").innerText="Peeranat";
+  </script>
+  <h2 class="textred pinkborder"> KMITL </h2>
+  <h3 onclick="alert('hi');" >H3</h3>
+  <h4 onclick=changeName()>clickme</h4>
+  <h3 onclick="myAlert();" >H3.1</h3>
+  
+  A<span style="color:green"> B </span> C <div> D </div> E 
+  
+  
+  
+  <hr/>
+  <img src="images.jpg" width="100px" />
+  <img src="images.jpg" width="100%" />
+  
+  <a target="_blank" href="http://youtube.com">youtube</a>
+  <a target="_blank" href="http://youtube.com">
+		<img src="youtube.jpg" width="100px" /> </a> 
+  <br/>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0T2YvqTB7uM" frameborder="0" allowfullscreen></iframe>
+  
+  <div>
+  
+		
+		
 </body>
 </html>
